@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Bias: The Bad </title>
+		
+		<meta charset = "UTF-8">
+			<meta name = "author" content = "Ruth Abigail Sulvita">
+			<meta name = "keywords" content = "HTML, CSS, JavaScript">
+			<meta name = "revised" content = "25-01-2021">
+			
+		<link rel="stylesheet" href="../stylesheets/websiteStyle.css">
+		<link rel="stylesheet" href="../stylesheets/theBadStyle.css">
+		<!--this page has a separate stylesheet because it needs too much tweaks. this html file would get crowded if I stored them under the <style> tag-->
+	</head>
+	
+	<body>
+	<div class = "centered-body">
+	
+		<header class = "page-header"> 
+		
+			<img src = "../images/Bad.png" class = "align-left" height = "300px"><!--the logo-->
+			<!--page intro-->
+			<div class = "big-box align-right"> 
+				Bias is <span class = "emphasis">unacceptable in news content</span>. Media outlets have a duty to disperse information unbiasedly, so that the citizens of this country become informed and able to make <span class = "emphasis">good decisions</span>. When news content is affected by bias, our citizens may suffer. <br><br>
+				
+				In the example boxes, click on the gray highlights to navigate to the transcript snippets. <br><br>
+			</div>
+		
+		</header>
+		
+		<section id = "intro"> 
+			<div class = "big-box align-left">
+				This page will focus on a recent news story, and how it was covered by the three media giants in the Philippines: <span class = "emphasis">TV 5, ABS-CBN, and GMA</span>, on their respective evening programs. Watch the three videos below, or see the <a href="references.html#transcripts">transcripts</a>.<br><br>
+				
+				<!--some background on the news story-->
+				
+				A few days before, the <span class = "emphasis">Presidential Security Guard</span> was reported to have recieved vaccines even though the FDA had <span class = "emphasis">not approved any vaccines</span> yet. There is no law that incriminates one who gets injected with an unapproved vaccine, but smuggling unapproved vaccines into the country is most certainly <span class = "emphasis">illegal</span>. The PSG confessed to the public that they--of their own accord--arranged to be vaccinated. The <span class = "emphasis">Congress</span> and the <span class = "emphasis">Senate</span> wished to call the PSG into their investigation on smuggled vaccines. But <span class = "emphasis">President Duterte reacted</span>.
+			</div>
+			
+			<nav>
+				<div class = "navig-header"></div>
+				<ul>
+					<li><a href = "../Index.html">homepage</a></li>
+					<li><a href = "The Good.html">the good</a></li>
+					<li><a href = "The Bad.html" class = "current">the bad</a></li>
+					<li><a href = "References.html">references</a></li>
+				</ul>
+			</nav>
+			
+		</section>
+		
+		<section class = "media-intro"><!--featuring the video, social media links, and headline-->
+			<header> TV5 </header>
+			<video controls autoplay muted width = "830"> 
+				<source src = "../videos/TV5Report.mp4" type = "video/mp4">
+			</video>
+			<div> 
+				<a href = "https://twitter.com/TV5manila" target = "_blank" ><div class = "twitter" ></div></a>
+				<a href = "https://www.facebook.com/TV5manila/" target = "_blank"><div class = "fb" ></div></a>
+				<p> Duterte, nagbabala sa Kongreso sa isyu ng pagbabakuna ng PSG </p>
+				<span class = "highlight"><a href = "TV5Transcript.html">Transcript here</a></span>
+			</div>
+		</section>
+		
+		<section class = "media-intro">
+			<header> ABS-CBN </header>
+			<video controls autoplay muted width = "830">  
+				<source src = "../videos/ABS-CBNReport.mp4" type = "video/mp4">
+			</video>
+			<div> 
+				<a href = "https://twitter.com/ABSCBNNews" target = "_blank" ><div class = "twitter" ></div></a>
+				<a href = "https://www.facebook.com/abscbnNEWS/" target = "_blank"><div class = "fb" ></div></a>
+				<p>Duterte sa PSG: 'Wag sumipot, magsalita kung ipatawag sa Kongreso dahil sa COVID-19 vaccination </p>
+				<span class = "highlight"><a href = "ABS-CBNTranscript.html">Transcript here</a></span>
+			</div>
+		</section>
+		
+		<section class = "media-intro">
+			<header> GMA </header>
+			<video controls autoplay muted width = "830"> 
+				<source src = "../videos/GMAReport.mp4" type = "video/mp4">
+			</video>
+			<div> 
+				<a href = "https://twitter.com/gmanews" target = "_blank" ><div class = "twitter" ></div></a>
+				<a href = "https://www.facebook.com/gmanews/" target = "_blank"><div class = "fb" ></div></a>
+				<p> Pres. Duterte, 'di papayagang humarap sa pagdinig ng Kongreso ang PSG kaugnay sa pagpapaturok ng 'di rehistradong bakuna </p>
+				<span class = "highlight"><a href = "GMATranscript.html">Transcript here</a></span>
+			</div>
+		</section>
+		
+		<header> 11 types of media bias </header>
+		<!--
+			Each type of media bias gets its own section and section id. Each section has three divs: a definition and explanation box, then an example box containing a snippet from the transcript, and a div for the example's header.
+		-->
+		<section> 
+			<div class = "whole-box align-left">
+				Most <span class = "emphasis">media/news bias articles</span> I've encountered on the Internet use <span class = "emphasis">American news outlets</span> as their examples, including this article by <a href = "https://www.allsides.com/media-bias/how-to-spot-types-of-media-bias">allsides.com</a>, which enumerates 11 types of media bias. I wanted to showcase something similar but using <span class = "emphasis">our own media networks</span> as examples. I have borrowed allsides' definitions for the types of media bias. We will be dissecting three different news reports on the story of Duterte's reaction to the PSG vaccination.
+			</div>
+			
+			<table id = "toc">
+			<!--
+				a table of contents, in a literal <table> tag. 
+			-->
+				<tr>
+					<td>table of contents</td>
+					<td><a href = "The Bad.html#spin" class = "single">spin</a></td>
+					<td><a href = "The Bad.html#unsubstantiated-claims">unsubstantiated claims</a></td>
+					<td><a href = "The Bad.html#opinion-statements-presented-as-fact">opinion statements presented as fact</a></td>
+				</tr>
+				<tr>
+					<td><a href = "The Bad.html#sensationalism-emotionalism">sensationalism/ emotionalism</a></td>
+					<td><a href = "The Bad.html#mudslinging-ad-hominem">mudslinging/ad hominem</a></td>
+					<td><a href = "The Bad.html#mind-reading" class = "single">mind reading</a></td>
+					<td><a href = "The Bad.html#slant" class = "single">slant</a></td>
+				</tr>
+				<tr>
+					<td><a href = "The Bad.html#flawed-logic" class = "single">flawed logic</a></td>
+					<td><a href = "The Bad.html#bias-by-omission" class = "single">bias by omission</a></td>
+					<td><a href = "The Bad.html#omission-of-source-attribution" class = "double">omission of source attribution</a></td>
+					<td><a href = "The Bad.html#bias-by-placement" class = "single">bias by placement</a></td>
+				</tr>
+			</table>
+		</section>
+		
+		<section id = "spin">
+			<a class = "back-to-toc" href = "The Bad.html#toc">Back to Table of Contents</a>
+			<!--a "back to top" button that will direct to the table of contents. this only shows up if the section is targeted.-->
+			<header>spin</header>
+			
+			<div class = "half-box align-left"> 
+				<div class = "open-quotes"></div><br><!--this is an image sprite of quotation marks-->
+				
+				<p class = "definition">Spin is a type of media bias that means <span class = "emphasis">vague, dramatic or sensational language.</span> When journalists put a “spin” on a story, they stray from objective, measurable facts. Spin is a form of media bias that <span class = "emphasis">clouds a reader’s view</span>, preventing them from getting a precise take on what happened.</p>
+				
+				<div class = "close-quotes"></div><br><br>
+				
+				Kumambiyo, or to suddenly shift, is dramatic language.
+			</div>
+			
+			<div class = "example-body"><!--this will have a different font-style-->
+				<span class = "highlight"><a href = "TV5Transcript.html#2">TV 5</a></span><br><br>
+				<!--this link will take you to the quote in the transcript-->
+					Cosim: <span class = "emphasis">Kumambiyo</span> rin ang pangulo tungkol sa pagbabakuna ng mga PSG na siya mismo ang unang nagsiwalat. 
+			</div>
+			
+			<div class = "example-header"></div><!--its background-image is a vertical header-->
+		</section>
+		
+		<section id = "unsubstantiated-claims">
+			<a class = "back-to-toc" href = "The Bad.html#toc">Back to Table of Contents</a>
+			<header>unsubstantiated claims</header>
+		
+			<div class = "half-box align-left">
+				<div class = "open-quotes"></div><br>
+				
+				<p class = "definition">Journalists sometimes make claims in their reporting <span class = "emphasis">without including evidence</span> to back them up. This can occur in the headline of an article, or in the body. </p>
+				
+				<div class = "close-quotes"></div><br><br>
+				
+				The reporter in the example did not include in his report any evidence to back up this claim.
+			</div>
+		
+			<div class = "example-body"> 
+				<span class = "highlight"><a href = "GMATranscript.html#4">GMA</a></span><br><br>
+					Reporter: Pero sabi ng Philippine Army, ang pangulo raw ang nag-utos na gawin ito.
+			</div>
+			
+			<div class = "example-header "></div>
+		</section>
+		
+		<section id ="opinion-statements-presented-as-fact">
+			<a class = "back-to-toc" href = "The Bad.html#toc">Back to Table of Contents</a>
+			<header>opinion statements presented as fact</header>
+		
+			<div class = "half-box align-left"> 
+				<div class = "open-quotes"></div><br>
+				<p class = "definition">Sometimes journalists use <span class = "emphasis">subjective language</span> or statements under the guise of reporting objectively. Even when a media outlet presents an article as a factual and objective news piece, it may employ subjective statements or language. </p>
+				<div class = "close-quotes"></div><br><br>
+				
+				The reporter in the example did not show any evidence supporting this statement. <span class = "emphasis">Sino ang bumabatikos?</span> Who is criticizing? This may be an opinion statement.
+			</div>
+		
+			<div class = "example-body ">
+				<span class = "highlight"><a href = "GMATranscript.html#9">GMA</a></span><br><br>
+					Reporter: <span class = "emphasis">Binabatikos</span> ang pagpapabakuna sa mga taga-PSG, dahil wala pa namang bakunang inaprubahan ng ating Food and Drug Administration. Kaya paano raw ito nakapasok sa ating bansa?
+			</div>
+			
+			<div class = "example-header "></div>
+		</section>
+		
+ 		<section id = "sensationalism-emotionalism">
+			<a class = "back-to-toc" href = "The Bad.html#toc">Back to Table of Contents</a>
+			<header> sensationalism/emotionalism </header>
+		
+			<div class = "half-box align-left">
+				<div class = "open-quotes"></div><br>
+				<p class = "definition">Sensationalism is a type of media bias in which information is presented in a way that <span class = "emphasis">gives a shock</span> or makes a deep impression. Often it gives readers a false sense of culmination, that all previous reporting has led to this ultimate story. </p>
+				<div class = "close-quotes"></div><br><br>
+				
+				The word "nagbanta" shocks the viewer. Duterte did not threaten the lawmakers; he only <i> warned </i> them of a possible "little crisis" if PSG was placed in contempt in their hearing. See the 2nd quote.In TV5's own news report, Duterte actually says that he's not threatening.
+			</div>
+		
+			<div class = "example-body"> 
+				<span class = "highlight"><a href = "TV5Transcript.html#1">TV 5</a></span><br><br>
+					Tulfo: <span class = "emphasis">Nagbanta</span> si Pangulong Duterte sa Kongreso na huwag ng manghimasok sa isyu ng hindi otorisadong pagpapabakuna ng mga kawani ng Presidential Security Group.<br><br>
+				
+					Duterte: ...And <span class = "emphasis">I'm not threatening</span>, please do not cite them in contempt by detaining them; I will not allow it.
+			</div>
+			
+			<div class = "example-header"></div>
+		</section>
+		
+		<section id = "mudslinging-ad-hominem">
+			<a class = "back-to-toc" href = "The Bad.html#toc">Back to Table of Contents</a>
+			<header> mudlinging/ad hominem </header>
+		
+			<div class = "half-box align-left"> 
+				<div class = "open-quotes"></div><br>
+				<p class = "definition">Mudslinging is a type of media bias when unfair or <span class = "emphasis">insulting things</span> are said about someone in order to damage their reputation. Similarly, ad hominem (Latin for “to the person”) attacks are <span class = "emphasis">attacks on a person’s motive or character traits</span> instead of the content of their argument or idea. Ad hominem attacks can be used overtly, or as a way to subtly discredit someone without having to engage with their argument. </p>
+				<div class = "close-quotes"></div><br><br>
+			</div>
+		
+			<div class = "example-body"> 
+				None observed.
+			</div>
+			
+			<div class = "example-header"></div>
+		</section>
+		
+		<section id = "mind-reading">
+			<a class = "back-to-toc" href = "The Bad.html#toc">Back to Table of Contents</a>
+			<header> mind reading </header>
+		
+			<div class = "half-box align-left"> 
+				<div class = "open-quotes"></div><br>
+				<p class = "definition">Mind reading is a type of media bias that occurs in journalism when a writer <span class = "emphasis">assumes they know what another person thinks</span>, or thinks that the way they see the world reflects the way the world really is.  </p>
+				<div class = "close-quotes"></div><br><br>
+				
+				In the quote on the right, there is no evidence that Duterte was indeed talking about the PSG when he said that. The reporter is reading Duterte's mind.
+			</div>
+		
+			<div class = "example-body"> 
+				<span class = "highlight"><a href = "ABSCBNTranscript.html#5">ABS-CBN</a></span><br><br>
+				Reporter: Pero matatandaan na galing mismo kay Pangulong Duterte ang impormasyong may ilang sundalo na pala ang naturukan ng bakuna mula sa China sa kanyang naging public address noong nakaraan, bagama't <span class = "emphasis">hindi niya diretsong pinangalanan</span> ang PSG. 
+			</div>
+			
+			<div class = "example-header"></div>
+		</section>
+		
+		<section id = "slant"><!--this section uses a wide layout. it doesn't have adjacent divs-->
+			<a class = "back-to-toc" href = "The Bad.html#toc">Back to Table of Contents</a>
+			<header> slant </header>
+		
+			<div class = "whole-box align-left"> 
+				<div class = "open-quotes"></div><br>
+				<p class = "definition">Slant is a type of media bias that describes when journalists tell <span class = "emphasis">only part of a story</span>. It can include <span class = "emphasis">cherry-picking</span> information or data to support one side, or <span class = "emphasis">ignoring</span> another perspective. Slant prevents readers from getting the full story, and narrows the scope of our understanding. </p>
+				<div class = "close-quotes"></div><br><br>
+			</div>
+			
+			<div class = "example-header"></div>
+			
+			<div class = "example-body"> 				
+				See the first two quotes below. ABS-CBN used these quotes in their report where the President seems to be <span class = "emphasis">indifferent</span> to the plight of his soldiers, seeking only his own survival. <br><br>
+				
+				<span class = "highlight"><a href = "ABSCBNTranscript.html#4">ABS-CBN</a></span><br>
+
+				<p class = "transcript">Duterte: Hayaan mo silang mamatay kung mayroong masamang epekto yung--I don't know what kind of vaccine--<span class = "emphasis">I don't care</span>, bahala sila, buhay nila iyon. </p><br>
+				
+				<span class = "highlight"><a href = "ABSCBNTranscript.html#8">ABS-CBN</a></span><br>
+				
+				<p class = "transcript">Duterte: <span class = "emphasis">How can I survive</span> if wala akong close-in to guard me... to prevent untoward, you know, incidents? Iyan ang problema diyan. </p><br>
+				
+				However, GMA used instead a different quote of Duterte where he seems to <span class = "emphasis">truly care</span> about his soldiers. See this quote below. <br><br>
+				
+				<span class = "highlight"><a href = "GMATranscript.html#11">GMA</a></span><br>
+			
+				<p class = "transcript">Duterte: The lives of these people--the lives of these soldiers--are <span class = "emphasis">placed on jeopardy</span>, because, walang choice eh. Trabaho nila 'yan. If the intelligence people would say, "Go to the crowd and mix with them, and maybe look for any hostile attitude or hostile act." Ang akin namang nakapalibot, babae't lalaki, hindi naman makalapit sa akin, kasi, "Sir, social distancing." How can they protect me if "social distancing"? </p><br>
+				
+				See the stark difference between the last two quotes, though they have essentially the same meaning. ABS-CBN's quote of Duterte has <span class = "emphasis">wrong grammar</span>, whereas GMA's quote of Duterte portrays him like a <span class = "emphasis">hero</span>. <br><br>
+				
+				<span class = "highlight"><a href = "ABSCBNTranscript.html#14">ABS-CBN</a></span><br>
+				
+				<p class = "transcript">Duterte: So what is there in legislation that you can make that has something to do with vaccine? You cannot legislate vaccine.</p><br>
+			
+				<span class = "highlight"><a href = "GMATranscript.html#8">GMA</a></span><br>
+				
+				<p class = "transcript">Duterte: I respect the separation of powers and that you have the right to conduct Congressional investigations--in aid of legislation. Tell me now, what aid that you can legislate? When there is no goddamn vaccine until now.</p><br>
+				
+				GMA picked quotes that <span class = "emphasis">paint Duterte in a good way</span>, while ABS-CBN picked quotes that <span class = "emphasis">paint Duterte in a bad way</span>. Both approaches are wrong. The media has a responsibility to present information without bias, and let their viewers decide their own opinions.
+				
+			</div>
+		
+		</section>
+		
+		<section id = "flawed-logic">
+			<a class = "back-to-toc" href = "The Bad.html#toc">Back to Table of Contents</a>
+			<header> flawed logic </header>
+		
+			<div class = "half-box align-left"> 
+				<div class = "open-quotes"></div><br>
+				<p class = "definition">Flawed logic or faulty reasoning is a way to misrepresent people’s opinions or to arrive at conclusions that are not justified by the given evidence. Flawed logic can involve <span class = "emphasis">jumping to conclusions</span> or arriving at a conclusion that doesn’t follow from the premise. </p>
+				<div class = "close-quotes"></div><br><br>
+				
+				In the first quote on the right, which occurred around a few days before, Duterte was referring to the army. However, in the second quote, he is referring to the PSG. Therefore, there is no evidence that the President changed his statement.
+			</div>
+		
+			<div class = "example-body"> 
+				<span class = "highlight"><a href = "TV5Transcript.html#10">TV 5</a></span><br><br>
+				Reporter: Ang pagsiwalat niya kamakailan na naturukan na ang ilang sundalo...<br><br>
+
+				Duterte: Sabihin ko sa'yo, marami na ang nagpa-injection dito sa Sinopharm. Halos lahat ng sundalo ko! Natusukan na--I have to be frank, I have to tell the truth. <br><br>
+
+				Reporter: <span class = "emphasis">...Biglang nabago na.</span><br><br>
+
+				Duterte: I don't know really if they were injected with the vaccine--what brand, or, di ko alam. Do not presume na sabi, kino-cover-up, putang ina kayo. Hindi ako gago na maglaro ng ito.<br><br>	
+			</div>
+			
+			<div class = "example-header"></div>
+		</section>
+		
+		<section id = "bias-by-omission">
+			<a class = "back-to-toc" href = "The Bad.html#toc">Back to Table of Contents</a>
+			<header> bias by omission </header>
+		
+			<div class = "half-box align-left"> 
+				<div class = "open-quotes"></div><br>
+				<p class = "definition">Bias by omission is a type of media bias in which media outlets choose not to cover certain stories or <span class = "emphasis">omit information</span> that would support an alternative viewpoint.</p>
+				<div class = "close-quotes"></div><br><br>
+				
+				The first quote in the example is actually made up of <span class = "emphasis">two quotes spliced together</span> to make them seem more daunting. They omittted the rest of the second quote, where Duterte did not directly command Durante to ignore the Congress' summons. He said he <i>would</i> do that if the Congress continued the investigation. He <i>would ask</i> the PSG to shut up. His words were hypothetical and in future tense.
+
+			</div>
+		
+			<div class = "example-body"> 
+				<span class = "highlight"><a href = "ABSCBNTranscript.html#16">ABS-CBN</a></span><br><br>
+				Duterte: I would ask the PSG to just shut up. Do not answer. Invoke the right against self-incrimination. At wala kayong makukuha.  Durante do not obey the summons. I am ordering you to stay put in the barracks. <br><br>
+				<span class = "highlight"><a href = "GMATranscript.html#5">GMA</a></span><br><br>	
+				Duterte: Gusto ninyo ng gulo, sige. <span class = "emphasis">I think now</span>, I will tell Durante, "Durante, do not obey the summons. I am ordering you to stay put in the barracks." 
+			</div>
+			
+			<div class = "example-header"></div>
+		</section>
+		
+		<section id ="omission-of-source-attribution">
+			<a class = "back-to-toc" href = "The Bad.html#toc">Back to Table of Contents</a>
+			<header> omission of source attribution </header>
+		
+			<div class = "half-box align-left"> 
+				<div class = "open-quotes"></div><br>
+				<p class = "definition">An informative, balanced article should provide the background or context of a story, including naming sources (publishing “on-the-record” information).<br><br>
+				Sometimes, reporters will mention <span class = "emphasis">“immigration opponents” or “supporters of the bill”</span> without identifying who these sources are.</p>
+				<div class = "close-quotes"></div><br><br>
+				
+				The same quote in the example is used in <a href = "The Bad.html#opinion-statements-presented-as-fact">Opinion Statements presented as Fact</a>.<br><br>
+				The reporter did not show any evidence supporting this statement. <span class = "emphasis">Sino ang bumabatikos</span>? Who is criticizing?
+			</div>
+		
+			<div class = "example-body">
+				<span class = "highlight"><a href = "GMATranscript.html#9">GMA</a></span><br><br>
+				
+				Reporter: Binabatikos ang pagpapabakuna sa mga taga-PSG, dahil wala pa namang bakunang inaprubahan ng ating Food and Drug Administration. Kaya paano raw ito nakapasok sa ating bansa?
+			</div>
+			
+			<div class = "example-header"></div>
+		</section>
+		
+		<section id = "bias-by-placement">
+			<a class = "back-to-toc" href = "The Bad.html#toc">Back to Table of Contents</a>
+			<header> bias by placement </header>
+		
+			<div class = "whole-box align-left">
+				<div class = "open-quotes"></div><br>
+				<p class = "definition">Story and viewpoint placement can reveal media bias by showing which stories or viewpoints the editor finds <span class = "emphasis">most important</span>.</p>
+				<div class = "close-quotes"></div><br><br>
+				
+				Below are the mini-headlines that flash below the story while the reporter is talking during a news report. They show what the reporter/editor deems important or must be emphasized.
+			</div>
+		</section> 
+		
+		<section id = "mini-headlines">
+			<table>
+			<tr>
+				<th> TV 5 </th>
+				<th> ABS-CBN </th>
+				<th> GMA </th>
+			</tr>
+			<tr>
+				<td rowspan = "2"> Pres. Duterte, nagbabala sa Konreso sa isyu ng pagbakuna sa PSG </td>
+				<td> Pang. Duterte iginiit na hindi niya inutos na magpabakuna vs COVID-19 ang PSG </td>
+				<td rowspan = "2"> Pres. Duterte hindi raw papayagang humarap sa pagdinig ng Kongreso ang PSG kaugnay sa pagpapaturok ng mga ito ng di rehistradong bakuna </td>
+			</tr>
+			<tr>
+				<td> Pang. Duterte dinepensahan ang desisyon ng PSG na magpabakuna vs COVID-19 </td>
+				
+			</tr>
+			<tr>
+				<td rowspan = "2"> Pres. Duterte sa PSG: Balewalain ang pagtawag sa Senado </td>
+				<td> Mga pumuna sa pagpapabakuna ng PSG binatikos ni Duterte </td>
+				<td rowspan = "2"> Pres. Duterte, sinabing self preservation ang dahilan kaya nagawa ito ng PSG; hindi rin daw niya pinagtatakpan ang nangyari </td>
+			</tr>
+			<tr>
+				<td> Pang. Duterte nagbanta sa Senado kung pipiliting paharapin ang mga taga-PSG sa pagdinig </td>
+			</tr>
+			<tr>
+				<td rowspan = "2"> FDA, puwedeng magbigay ng special permit pero hindi retroactive </td>
+				<td> Pang. Duterte inutusan ang PSG na manahimik at ‘wag sumipot sa pagdinig </td>
+				<td rowspan = "2"> Sec. Roque: Self-preservation man ang ginawa ng PSG, hindi pa rin ito maaaring gawin ng ibang tao </td>
+			</tr>
+			<tr>
+				<td> FDA posible namang magbigay ng permit para sa bakunang kailangan ng PSG </td>
+			</tr>	
+			</table>	
+		</section>
+	</div>
+	</body>
+</html>
+
+		

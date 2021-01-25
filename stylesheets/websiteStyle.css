@@ -1,0 +1,163 @@
+/*GENERAL CSS RULES*/
+
+
+* {/*font-style for all text*/
+	font-family: DINNeuzeitGroteskStd-Light, Roboto, Arial;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	color: #2f3437;	
+}
+@font-face {
+	font-family: "DINNeuzeitGroteskStd-Light";
+	src: url("../fonts/DINNeuzeitGroteskStd-Light.otf");
+}
+/*classes for alignment*/
+.align-right {float: right}
+.align-left {float: left}
+.clear-left {clear: left}
+.clear-right {clear: right}
+
+body, div, section, header, video, ul, li, a, td, table {
+	box-sizing: border-box;
+}
+section {/*sections group two adjacent boxes together so that the layout doesn't change upon window resize*/
+	width: 830px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float: left;
+	clear: left;
+}
+header {
+	background-color: #2f3437;
+	width: 830px;
+	height: 60px;
+	color: #ffffff;
+	font-size: 280%;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float: left;
+	clear: left;
+}
+
+
+/*CSS FOR DIVS*/
+
+
+div.centered-body {/*this div centers the whole page*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 830px;
+}
+section > div {
+	border: 2px solid #2f3437;
+	padding: 30px;
+}
+header.page-header > div {
+	border: 2px solid #2f3437;
+	padding: 30px;
+}
+/*classes for the different widths of content boxes.*/
+div.small-box {width: 300px;}
+div.big-box {width: 500px;} 
+div.half-box {width: 400px;} 
+div.whole-box {width: 830px;}
+
+/*css for the vertical header beside example boxes*/
+div.example-header {
+	background-color: #2f3437;
+	background-image: url("../images/example.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:50px;
+	width: 50px;
+	padding: 0px;
+	border: 0px;
+}
+
+
+/*CSS FOR SPANS*/
+
+
+span.highlight {
+	background-color: #c0c0c0;
+	color: #ffffff;
+	padding: 4px;
+	line-height: 2.5;
+}
+span.highlight a {
+	color: #ffffff;
+	text-decoration: none;
+}
+span.emphasis {font-family: inherit}
+section > div:hover span.emphasis {
+	color: #a9a9a9;
+} 
+header.page-header > div:hover span.emphasis {
+	color: #a9a9a9;
+	font-family: inherit;
+}
+
+
+
+/*CSS FOR HEADERS*/
+
+
+header.page-header {
+	background-color: #ffffff;
+	max-width: 830px;
+	height: auto;
+	text-align: left;	
+}
+
+/*CSS FOR NAV*/
+
+nav {/*size of nav*/
+	float: right;
+	height: 440px;
+	width: 300px;
+}
+nav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	height: 440px;
+	width: 250px;
+}
+nav li {padding: 0px;}
+nav li a {
+	margin: 0px;
+	display: block;
+	border-left: 2px solid #2f3437;
+	border-right: 2px solid #2f3437;
+	border-top: 1px solid #2f3437;
+	border-bottom: 1px solid #2f3437;
+	height: 110px;
+	font-size: 175%;
+	text-decoration: none;
+	padding: 35px;
+}
+nav li:first-child a {border-top: 2px solid #2f3437}
+nav li:last-child a {border-bottom: 2px solid #2f3437}
+
+nav li a:hover {
+    background-color: #c0c0c0;
+	color: #ffffff;
+}
+nav li a.current {
+    background-color: #c0c0c0;
+	color: #ffffff;
+}
+div.navig-header {
+	background-color: #2f3437;
+	background-image: url("../images/Navigation.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50px;
+	width: 50px;
+	padding: 0px;
+	border: 0px;
+	float:right;
+}

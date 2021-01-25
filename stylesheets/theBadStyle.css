@@ -1,0 +1,176 @@
+/*CSS TWEAKS FOR THE BAD*/
+
+
+@font-face {
+	font-family: "Roboto Mono";
+	src: url("../fonts/RobotoMono-VariableFont_wght.ttf");
+}
+section header {/*necessary: the bad headers are inside the sections, not outside*/
+	margin-top: 0; 
+	margin-bottom: 30px;
+}
+section.media-intro header {margin-bottom: 0;} 
+section.media-intro > div {margin-top: 0}
+			
+div.example-body {
+	width: 350px; 
+	float:right;
+	font-family: "Roboto Mono", monospace;
+}
+div.example-header {float:right} 
+
+p.definition {text-align: center} 
+div.open-quotes {
+	background: url('../images/quotation-marks.png') no-repeat -4px -7px;
+	width: 20px;
+	height: 14px;
+	float: left;
+}
+div.close-quotes {
+	background: url('../images/quotation-marks.png') no-repeat -39px -7px; 
+	width: 20px;
+	height: 14px;
+	float:right;
+}
+
+
+/*CSS FOR SPECIFIC SIZING OF DIVS*/ 
+header.page-header div {height: 300px; padding-top: 60px}
+			
+section#intro div {height: 440px;}
+			
+section#spin > div {height: 342px;}
+			
+section#unsubstantiated-claims > div {height: 290px}
+			
+section#opinion-statements-presented-as-fact > div {height: 376px;}
+			
+section#sensationalism-emotionalism > div{height: 404px}
+			
+section#mudslinging-ad-hominem > div {height: 363px}
+			
+section#mind-reading > div {height: 342px}
+			
+section#flawed-logic > div {height: 564px}
+			
+section#bias-by-omission > div {height: 450px}
+			
+section#omission-of-source-attribution > div {height: 467px}
+
+
+/*CSS FOR TABLE IN SECTION: BIAS BY PLACEMENT*/
+
+			
+section#mini-headlines table {
+	border: 2px solid #2f3437;
+	width: 830px;
+	border-collapse: collapse;
+}
+section#mini-headlines td, section#mini-headlines th {
+	padding: 30px;
+	border: 2px solid #2f3437;
+	min-width: 200px; 
+}
+
+
+/*CSS FOR SECTION: SLANT*/
+/*has a different layout*/
+
+
+section#slant div.example-body {
+	width: 780px; 
+	height: 1063px;
+	float: left;
+	font-family: DINNeuzeitGroteskStd-Light, Arial;
+}
+section#slant div.example-body p {font-family: "Roboto Mono", Consolas;}
+section#slant div.example-header {float: left; height: 1063px}
+section#slant div.whole-box {margin-bottom: 30px}
+
+
+/*CSS FOR SECTION: MEDIA INTRO*/
+
+
+section.media-intro a div {
+	width: 33px;
+	height: 33px;
+}
+section.media-intro a {
+	display: block;
+	float: left;
+	margin: 10px;
+}
+section.media-intro span, section.media intro span a {
+	display: block; 
+}
+
+/*image sprites for social media icons (taken from a 2nd quarter exer)*/
+div.twitter {background: url("../images/social-media.png") no-repeat -296px -91px;}
+div.twitter:hover {background: url("../images/social-media.png") no-repeat -296px -16px;}
+div.fb {background: url("../images/social-media.png") no-repeat -182px -91px;}
+div.fb:hover {background: url("../images/social-media.png") no-repeat -182px -16px;}
+
+section.media-intro div, section.media-intro video, section.media-intro p, section.media-intro span, section.media intro span a {float: left; clear: left}
+section.media-intro p {font-size: 150%;}
+
+section.media-intro > div {
+	margin-top: 0px;
+	width: 830px;
+}
+
+section.media-intro video {border: 2px solid #2f3437; background-color: #2f3437;}
+
+
+/*CSS FOR TOC OF 11 TYPES OF MEDIA BIAS*/
+
+
+table#toc, table#toc td, table#toc a {box-sizing: border-box}
+table#toc {
+	margin-top: 30px;
+	margin-bottom: 0px;
+	float: left;
+	clear: left;
+	border: 2px solid #2f3437;
+	width: 830px;
+	border-collapse: collapse;
+}
+table#toc td {
+	text-align: center;
+	padding: 0px;
+	border: 2px solid #2f3437;
+	width: 206.5px; 
+}
+table#toc tr:first-child td:first-child {color:#b9b9c8}
+table#toc td a {
+	display: block;
+	padding: 30px;
+	width: 205.5px;
+	height: 103.47px;
+	text-decoration: none;
+}
+table#toc td a.single {padding-top: 40px; padding-bottom: 40px;}
+table#toc td a:hover {
+    background-color: #c0c0c0;
+	color: #ffffff;
+}
+
+
+/*CSS FOR BACK-TO-TOC BUTTON*/
+section > a.back-to-toc {
+	display: block;
+	width: 0;
+	height: 0;
+	font-size: 0px;
+	border: 0;
+	padding: 0;
+}
+section:target > a.back-to-toc {
+	font-size: 14px;
+	width: 205px;
+	height: 40px;
+	padding: 10px;
+	background-color: #c0c0c0;
+	color: #ffffff;
+	text-decoration: none;
+}
+	

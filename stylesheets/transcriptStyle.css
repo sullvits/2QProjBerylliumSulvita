@@ -1,0 +1,113 @@
+/*
+	transcripts have a slightly different layout, so they need a new stylesheet. they also function differently.
+	all webpages have the same theme (monochrome boxes) and palette (black, silver, gray, white)
+*/
+
+/*GENERAL CSS RULES*/
+
+
+* {
+	font-family: DINNeuzeitGroteskStd-Light, Roboto, Arial;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	color: #2f3437;	
+}
+@font-face {
+	font-family: "DINNeuzeitGroteskStd-Light";
+	src: url("../fonts/DINNeuzeitGroteskStd-Light.otf");
+}
+a {color: inherit}
+section, p, header, a, td, table {
+	box-sizing: border-box;
+}
+section {
+	width: 830px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: 2px solid #2f3437;
+	padding: 15px;
+	float: left;
+	clear: left;
+}
+div.centered-body {/*this centers the whole page*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 830px;
+}
+header {
+	font-family: "DINNeuzeitGroteskStd-Light", Arial;
+	background-color: #2f3437;
+	width: 830px;
+	height: 60px;
+	color: #ffffff;
+	font-size: 280%;
+	text-align: center;
+	letter-spacing: 1px;
+	/*margin-top: 30px;*/
+	margin-bottom: 15px;
+	float: left;
+	clear: left;
+}
+header.headline {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: #ffffff;
+	border: 2px solid #2f3437;
+	color: #2f3437;
+	font-size: 200%;
+	height: auto;
+	padding: 15px;
+}
+video {
+	float: left;
+	clear: left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+/*CSS RULES FOR PARAGRAPHS*/
+/*
+	Lines are grouped into paragraphs so they can be targeted individually. 
+	The Bad.html links to these paragraphs.
+	Some <p> tags enclose single lines, some enclose multiple lines because they are targeted together.
+*/
+
+p {padding: 15px}
+p:target {
+	background-color: #f0f0f0;
+}
+
+
+/*CSS RULES FOR TRANSCRIPTS NAVIGATION*/
+
+
+table {
+	margin-top: 15px;
+	float: left;
+	clear: left;
+	border: 2px solid #2f3437;
+	width: 830px;
+	border-collapse: collapse;
+}
+td {
+	text-align: center;
+	padding: 0px;
+	border: 2px solid #2f3437;
+	min-width: 200px; 
+}
+td a {
+	font-size: 175%; 
+	text-decoration: none;
+	display: block;
+	padding: 30px;
+}
+td a:hover {
+    background-color: #c0c0c0;
+	color: #ffffff;
+}
+td a.current {
+    background-color: #c0c0c0;
+	color: #ffffff;
+}
